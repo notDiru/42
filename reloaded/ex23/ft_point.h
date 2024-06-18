@@ -17,6 +17,5 @@ typedef struct
 	int	x;
 	int	y;
 }t_point
-
-void	t_set_point(*t_point);
+void	t_set_point (t_point);
 #endif

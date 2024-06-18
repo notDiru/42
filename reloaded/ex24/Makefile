@@ -13,8 +13,12 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC = ./srcs/*
-HEADER = ./includes/*
+SRC = ./srcs/ft_putchar.c \
+	  ./srcs/ft_putstr.c \
+	  ./srcs/ft_strcmp.c \
+	  ./srcs/ft_strlen.c \
+	  ./srcs/ft_swap.c
+HEADER = ./includes/libft.h
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
