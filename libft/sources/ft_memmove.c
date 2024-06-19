@@ -9,35 +9,19 @@
 /*   Updated: 2024/06/17 13:41:06 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "../libft.h"
 
 void	*ft_memmove(void *dest, const void *src, int n)
 {
-	int			i;
-	char		*des;
-	const char	*sour;
+	unsigned char	*final;
+	unsigned char	*source;
 
-	des = (char *)dest;
-	sour = (const char *)src;
-	if (des == sour)
-		return (dest);
-	if (sour < des && sour + n > des)
-	{
-		i = n;
-		while (i > 0)
-		{
-			des[i - 1] = sour[i - 1];
-			i--;
-		}
-		return (des);
-	}
-	else
-	{
-		i = 0;
-		while (i < n)
-		{
-			des[i] = sour[i];
-		}
-		return (des);
-	}
-	return (dest);
+	final = dest;
+	source = (unsigned char*)src;
+	if (dest < src)
+		return (ft_memcpy(dst, src, n));
+	if (dest > src)
+		while (n--)
+			final[n] = source[n];
+	return (dst);
 }
