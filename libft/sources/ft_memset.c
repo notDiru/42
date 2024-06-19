@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memset(void *array, int value, unsigned int space)
+void	*ft_memset(void *array, int value, unsigned int space)
 {
 	unsigned int	i;
 	unsigned char	*ptr;
@@ -22,4 +22,5 @@ void	ft_memset(void *array, int value, unsigned int space)
 		ptr[i] = (unsigned char)value;
 		i++;
 	}
+	return (array);
 }

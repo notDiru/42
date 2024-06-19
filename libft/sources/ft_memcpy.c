@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memcpy(void *dest,const void *src, unsigned int n)
+void	*ft_memcpy(void *dest, const void *src, unsigned int n)
 {
-	unsigned int  i;
-	char			    *d;
+	unsigned int	i;
+	char			*d;
 	const char		*s;
 
 	i = 0;
@@ -24,4 +24,5 @@ void	ft_memcpy(void *dest,const void *src, unsigned int n)
 		d[i] = s[i];
 		i++;
 	}
+	return (dest);
 }
