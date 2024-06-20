@@ -23,6 +23,11 @@ SRCS =	./sources/ft_isalpha.c	\
 		./sources/ft_memcpy.c	\
 		./sources/ft_memmove.c	\
 		./sources/ft_strlcpy.c	\
+		./sources/ft_toupper.c	\
+		./sources/ft_tolower.c	\
+		./sources/ft_strchr.c	\
+		./sources/ft_strlcat.c	\
+		./sources/ft_strdup.c
 
 HEADER = libft.h
 OBJ = $(SRCS:./sources/%.c=./sources/%.o)

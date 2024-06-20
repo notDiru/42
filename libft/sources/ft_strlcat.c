@@ -11,11 +11,22 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
-void	ft_strlcat(char *dest, const char *src, unsigned int size)
+int	ft_strlcat(char *dest, const char *src, unsigned int size)
 {
-	//Strlcat une desde el null de src y copia dest aí.
-	if (size <= 0 || dest <= 0)
-		return ;
-	
+	unsigned int	len;
+	unsigned int	i;
+
+	i = 0;
+	while (dest[i] && i < size)
+		i++;
+	len = i;
+	while (src[i - len] && i + 1 < size)
+	{
+		dest[i] = src[i - len];
+		i++;
+	}
+	if (len < size)
+		dest[i] = '\0';
+	return (len + ft_strlen(src));
 }
 
