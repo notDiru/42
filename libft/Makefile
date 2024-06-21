@@ -6,7 +6,7 @@
 #    By: adiaz-ru <adiaz-ru@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 09:41:26 by adiaz-ru          #+#    #+#              #
-#    Updated: 2024/06/17 14:11:21 by adiaz-ru         ###   ########.fr        #
+#    Updated: 2024/06/21 19:02:18 by adiaz-ru         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -25,6 +25,7 @@ SRCS =	./sources/ft_isalpha.c	\
 		./sources/ft_strlcpy.c	\
 		./sources/ft_toupper.c	\
 		./sources/ft_tolower.c	\
+		./sources/ft_strchr.c	\
 		./sources/ft_strchr.c	\
 		./sources/ft_strlcat.c	\
 		./sources/ft_strdup.c
