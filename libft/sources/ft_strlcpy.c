@@ -6,7 +6,7 @@
 /*   By: adiaz-ru <adiaz-ru@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 11:59:49 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/06/17 13:41:31 by adiaz-ru         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:49:31 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../libft.h"
@@ -24,5 +24,7 @@ unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 		i++;
 	}
 	dest[i] = '\0';
+	while (src[i] != '\0')
+		i++;
 	return (i);
 }
