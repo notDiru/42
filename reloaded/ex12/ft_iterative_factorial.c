@@ -6,30 +6,25 @@
 /*   By: adiaz-ru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 09:17:57 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/06/06 09:41:50 by adiaz-ru         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:29:21 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factorial(int nb)
 {
-	int	n;
+	int	result;
+	int	i;
 
+	i = 1;
+	result = 1;
 	if (nb < 0)
 		return (0);
-	else if (nb == 0)
-		return (1);
-	n = nb - 1;
-	while (n > 1)
+	while (i <= nb)
 	{
-		nb *= n;
-		n--;
+		if (result > 2147483647 / i)
+			return (0);
+		result *= i;
+		i++;
 	}
-	return (nb);
+	return (result);
 }
-//#include <stdio.h>
-//int main(void)
-//{
-//	int result = ft_iterative_factorial(10);
-//	printf("%i\n", result);
-//	return (0);
-//}

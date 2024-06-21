@@ -6,14 +6,15 @@
 /*   By: adiaz-ru <adiaz-ru@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:24:25 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/06/19 15:30:15 by adiaz-ru         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:16:46 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <fcntl.h>
-void ft_print(char *str);
-void ft_read(char *filename);
 
-int main(int argc, char **argv)
+void	ft_print(char *str);
+void	ft_read(char *filename);
+
+int	main(int argc, char **argv)
 {
 	if (argc <= 1)
 	{

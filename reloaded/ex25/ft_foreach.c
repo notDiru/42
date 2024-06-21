@@ -6,13 +6,13 @@
 /*   By: adiaz-ru <adiaz-ru@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 02:18:03 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/06/18 03:20:24 by adiaz-ru         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:11:57 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	unsigned int i;
+	int	i;
 
 	i = 0;
 	while (i < length)
