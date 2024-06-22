@@ -33,5 +33,6 @@ void			*ft_memset(void *array, int value, unsigned int space);
 void			ft_bzero(void *array, unsigned int size);
 void			*ft_memcpy(void *dest, const void *src, unsigned int n);
 void			*ft_memmove(void *dest, const void *src, unsigned int n);
+void			*ft_calloc(unsigned int nmemb, unsigned int size);
 unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int size);
 #endif
