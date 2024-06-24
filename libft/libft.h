@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <aio.h>
 
 int				ft_isdigit(int n);
 int				ft_isalpha(char c);
@@ -40,4 +41,5 @@ char			*ft_strdup(char *src);
 void			*ft_calloc(unsigned int nmemb, unsigned int size);
 char			*ft_strnstr(const char *big, const char *little, int len);
 int				ft_atoi(const char *nptr);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 #endif

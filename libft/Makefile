@@ -34,7 +34,8 @@ SRCS =	./sources/ft_isalpha.c	\
 		./sources/ft_strnstr.c	\
 		./sources/ft_strdup.c	\
 		./sources/ft_calloc.c	\
-		./sources/ft_atoi.c
+		./sources/ft_atoi.c		\
+		./sources/ft_substr.c
 
 HEADER = libft.h
 OBJ = $(SRCS:./sources/%.c=./sources/%.o)
