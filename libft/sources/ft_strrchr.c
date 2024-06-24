@@ -11,10 +11,11 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
-char  *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    int	i;
+	int	i;
 
+	i = 0;
 	i = ft_strlen(s);
 	if (!s)
 		return (0);
@@ -26,4 +27,3 @@ char  *ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-

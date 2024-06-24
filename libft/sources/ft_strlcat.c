@@ -29,4 +29,3 @@ int	ft_strlcat(char *dest, const char *src, unsigned int size)
 		dest[i] = '\0';
 	return (len + ft_strlen(src));
 }
-

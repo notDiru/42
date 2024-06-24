@@ -15,7 +15,7 @@ char	*ft_strdup(char *src)
 {
 	char			*str;
 	unsigned int	i;
-	
+
 	i = 0;
 	str = (char *)malloc((ft_strlen(src) + 1) * sizeof(char));
 	if (str == NULL)
@@ -28,13 +28,3 @@ char	*ft_strdup(char *src)
 	str[i] = '\0';
 	return (str);
 }
-//#include <stdio.h>
-//int main(void)
-//{
-//	char *str1 = "Hola!";
-//	char *str2 = ft_strdup(str1);
-//
-//	printf("La primera string es '%s' y tiene la memoria: %p\n", str1, (void *)str1);
-//	printf("La string clonada es '%s' y tiene la memoria: %p\n", str2, (void *)str2);
-//	return (0);
-//}

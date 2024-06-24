@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
-void  *ft_calloc(unsigned int nmemb, unsigned int size)
+void	*ft_calloc(unsigned int nmemb, unsigned int size)
 {
-	void  *ptr;
+	void	*ptr;
 
 	ptr = malloc(nmemb * size);
 	if (!ptr)
