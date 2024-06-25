@@ -42,4 +42,5 @@ void			*ft_calloc(unsigned int nmemb, unsigned int size);
 char			*ft_strnstr(const char *big, const char *little, int len);
 int				ft_atoi(const char *nptr);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strjoin(char const *s1, char const *s2);
 #endif
