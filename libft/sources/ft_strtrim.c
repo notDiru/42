@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
-static int ft_scrollcheck(char c, const char *alpha)
+static int	ft_scrollcheck(char c, const char *alpha)
 {
 	int	i;
 
