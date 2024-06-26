@@ -27,33 +27,22 @@ static int ft_scrollcheck(char c, const char *alpha)
 
 char  *ft_strtrim(char const *s1, char const *set)
 {
+	int	  start;
+	int	  end;
 	int	  i;
-	int	  j;
 	char  *p;
 
 	i = 0;
-	j = 0;
-	p = (char *)ft_calloc(ft_strlen(s1) + 1, sizeof(char));
+	start = 0;
+	end = ft_strlen(s1);
+	while (s1[start] && ft_scrollcheck(s1[start], set))
+		start++;
+	while (end > start && ft_scrollcheck(s1[end - 1], set))
+		end--;
+	p = (char *)ft_calloc(end - start + 1, sizeof(char));
 	if (!p)
 		return (0);
-	while (s1[i] != '\0')
-	{
-		if (ft_scrollcheck(s1[i], set) == 0)
-		{
-			p[j] = s1[i];
-			j++;
-		}
-		i++;
-	}
-	p[j] = '\0';
+	while (start < end)
+		p[i++] = s1[start++];
 	return (p);
 }
-//#include <stdio.h>
-//int main (int argc, char **argv)
-//{
-//	char *str = argv[1];
-//	char *ban = argv[2];
-//	if (argc == 3)
-//		printf("Cadena resultante: %s\n", ft_strtrim(str, ban));
-//	return (0);
-//}
