@@ -48,7 +48,10 @@ SRCS =	./sources/ft_isalpha.c		\
 		./sources/ft_putnbr_fd.c
 
 BONUS_SRCS = ./bonus/ft_lstnew_bonus.c 			\
-			 ./bonus/ft_lstadd_front_bonus.c	
+			 ./bonus/ft_lstadd_front_bonus.c	\
+			 ./bonus/ft_lstsize_bonus.c			\
+			 ./bonus/ft_lstlast_bonus.c			\
+			 ./bonus/ft_lstadd_back_bonus.c
 
 HEADER = libft.h
 OBJ = $(SRCS:./sources/%.c=./sources/%.o)

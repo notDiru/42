@@ -25,12 +25,12 @@ static int	ft_scrollcheck(char c, const char *alpha)
 	return (0);
 }
 
-char  *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	  start;
-	int	  end;
-	int	  i;
-	char  *p;
+	int		start;
+	int		end;
+	int		i;
+	char	*p;
 
 	i = 0;
 	start = 0;

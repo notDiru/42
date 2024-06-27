@@ -38,10 +38,10 @@ static int	ft_intlen(int n)
 	return (c);
 }
 
-char  *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int	i;
-	char  *result;
+	int		i;
+	char	*result;
 
 	i = ft_intlen(n);
 	result = (char *)ft_calloc(i + 1, sizeof(char));

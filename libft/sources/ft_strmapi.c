@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
-char  *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	  i;
-	char  *str;
+	int		i;
+	char	*str;
 
 	str = (char *)ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!str)

@@ -79,7 +79,7 @@ static size_t	ft_count_tokens(char const *s, char delimiter)
 	return (tokens);
 }
 
-char  **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	tokens;
 	char	**token_v;
