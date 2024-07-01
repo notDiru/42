@@ -9,7 +9,7 @@
 /*   Updated: 2024/06/26 12:05:34 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../libft.h"
+#include "libft.h"
 
 static int	safe_malloc(char **token_v, int pos, size_t buffer)
 {

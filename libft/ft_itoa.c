@@ -9,7 +9,7 @@
 /*   Updated: 2024/06/26 15:00:31 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../libft.h"
+#include "libft.h"
 
 static int	ft_min(char *str)
 {

@@ -9,7 +9,7 @@
 /*   Updated: 2024/06/26 09:12:59 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../libft.h"
+#include "libft.h"
 
 static int	ft_scrollcheck(char c, const char *alpha)
 {

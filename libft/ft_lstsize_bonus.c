@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adiaz-ru <adiaz-ru@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/26 16:32:42 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/06/26 16:37:41 by adiaz-ru         ###   ########.fr       */
+/*   Created: 2024/06/27 12:26:45 by adiaz-ru          #+#    #+#             */
+/*   Updated: 2024/06/27 12:35:02 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../libft.h"
+#include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_lstsize(t_list *lst)
 {
-	if (n == -2147483648)
+	int	i;
+
+	if (!lst)
+		return (0);
+	i = 0;
+	while (lst)
 	{
-		ft_putchar_fd('-', fd);
-		ft_putchar_fd('2', fd);
-		n = 147483648;
+		lst = lst->next;
+		i++;
 	}
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		n = -n;
-	}
-	if (n > 9)
-	{
-		ft_putnbr_fd(n / 10, fd);
-	}
-	ft_putchar_fd((char)(n % 10 + '0'), fd);
+	return (i);
 }
