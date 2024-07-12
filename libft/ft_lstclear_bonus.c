@@ -6,9 +6,10 @@
 /*   By: adiaz-ru <adiaz-ru@student.42barcelona.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 19:32:20 by adiaz-ru          #+#    #+#             */
-/*   Updated: 2024/07/12 08:28:37 by adiaz-ru         ###   ########.fr       */
+/*   Updated: 2024/07/12 18:57:49 by adiaz-ru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
